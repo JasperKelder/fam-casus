@@ -375,6 +375,7 @@ nav > ul > li > a:hover {
   margin-top: 100px;
   padding-left: 80px;
   padding-right: 30px;
+  height: 360px;
 }
 
 .presale > div > h2 {
@@ -443,12 +444,6 @@ button:hover,
 }
 
 @media only screen and (min-width: 1600px) {
-  .presale {
-    height: 250px;
-  }
-}
-
-@media only screen and (min-width: 1600px) {
   .presale > div {
     padding-left: 300px;
   }
@@ -493,12 +488,8 @@ button:hover,
 }
 
 @media only screen and (max-width: 620px) {
-  .presale > div > a {
-    display: none;
-  }
-
   .presale > div {
-    height: 275px;
+    height: 450px;
   }
 }
 
@@ -516,13 +507,13 @@ button:hover,
 
 @media only screen and (max-width: 400px) {
   .presale > div {
-    height: 350px;
+    height: 500px;
   }
 }
 
 @media only screen and (max-width: 350px) {
   .presale > div {
-    height: 400px;
+    height: 550px;
   }
 }
 
@@ -632,6 +623,12 @@ button:hover,
   }
 }
 
+@media only screen and (max-width: 800px) {
+  .uitleg > div {
+    margin-top: 50px;
+  }
+}
+
 @media only screen and (max-width: 700px) {
   .uitleg > .links {
     height: 650px;
@@ -655,6 +652,9 @@ button:hover,
 }
 
 @media only screen and (max-width: 475px) {
+  .uitleg > div {
+    margin-top: 20px;
+  }
   .uitleg > .links {
     padding-right: 50px;
   }
