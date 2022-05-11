@@ -53,11 +53,6 @@ nav > ul > li > a {
   color: grey;
 }
 
-nav > ul > li > a:hover {
-  transition: color 0.4s;
-  color: var(--orange);
-}
-
 .logo {
   background-color: var(--white);
   height: 110px;
@@ -80,8 +75,15 @@ nav > ul > li > a:hover {
   transition: border 0.1s;
 }
 
-.logo:hover {
-  color: var(--orange);
+@media (hover: hover) {
+  nav > ul > li > a:hover {
+    transition: color 0.4s;
+    color: var(--orange);
+  }
+
+  .logo:hover {
+    color: var(--orange);
+  }
 }
 
 @media only screen and (min-width: 950px) {
@@ -195,13 +197,11 @@ nav > ul > li > a:hover {
   border: 2px solid var(--white);
 }
 
-.hero > ul > li > .orange-btn:hover {
-  color: var(--black);
-  transition: color 0.4s;
-}
-
-.hero > ul > li:nth-of-type(2):hover {
-  border-color: var(--orange);
+@media (hover: hover) {
+  .hero > ul > li > .orange-btn:hover {
+    color: var(--black);
+    transition: color 0.4s;
+  }
 }
 
 .hero > ul > li > a {
@@ -436,11 +436,13 @@ nav > ul > li > a:hover {
   font-weight: 700;
 }
 
-.button:hover,
-button:hover,
-.presale > div > a:hover {
-  color: var(--black);
-  transition: color 0.4s;
+@media (hover: hover) {
+  .button:hover,
+  button:hover,
+  .presale > div > a:hover {
+    color: var(--black);
+    transition: color 0.4s;
+  }
 }
 
 @media only screen and (min-width: 1600px) {
@@ -1001,16 +1003,18 @@ footer > ul > li > a > svg {
   transition: fill 0.4s;
 }
 
-footer > ul > li > a > svg:hover {
-  fill: var(--orange);
-}
-
 footer > a {
   transition: color 0.4s;
 }
 
-footer > a:hover {
-  color: var(--orange);
+@media (hover: hover) {
+  footer > ul > li > a > svg:hover {
+    fill: var(--orange);
+  }
+
+  footer > a:hover {
+    color: var(--orange);
+  }
 }
 
 @media only screen and (max-width: 500px) {
